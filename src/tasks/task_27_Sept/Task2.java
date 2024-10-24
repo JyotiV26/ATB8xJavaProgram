@@ -4,11 +4,14 @@ package tasks.task_27_Sept;
 
 public class Task2 {
     public static void main(String[] args) {
-        int a = 1;
+        int count = 1;
+        int num = 2;
+
         do {
-            System.out.println(a);
-            a++;
+            System.out.println(num);
+            num +=2;
+            count++;
         }
-        while (a<=5);
+        while (count<=5);
     }
 }

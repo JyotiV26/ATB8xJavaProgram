@@ -9,8 +9,8 @@ public class Task3 {
         while (i<=100)
         {
             sum = sum + i;
-            System.out.println(sum);
             i++;
         }
+        System.out.println(sum);
     }
 }
