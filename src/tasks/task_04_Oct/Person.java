@@ -12,38 +12,43 @@ public class Person {
     String city;
     String occupation;
 
-//Default Constructor
-  Person() {
-       f_name = "Simmy";
-       age = 25;
-  }
-
-    void walk(){
-        System.out.println("Name and age of person - " + f_name + " " + age);
-       //System.out.println("Without Parameter and Return type");
-
-  }
-
-    //Parametrized Constructor
-    Person (String l_name, char section){
-      l_name = "Smith";
-      section = 'A';
-    }
-
-    void talk(){
-        System.out.print("Last name and section of person - " + l_name + section);
-        //System.out.println("Without Parameter, with Return type");
-        //return ;
-    }
-
-    String sleep(String f_name){
-        //System.out.println("Simmy can sleep");
-        //System.out.println("With Parameter and Return type");
-        return "I am sleeping";
-    }
-
-    void eat(int age){
-       // System.out.println("With Parameter, without Return type");
-        //System.out.println("Eat");
-    }
+    //Default Constructor
+Person(){
+    System.out.println("Default Constructor");
 }
+
+//Parameterized constructor
+Person(String f_name, String l_name, int age, char section, long pin_code) {
+    System.out.println("Parameterized Constructor");
+    this.f_name = "Sam";
+    this.l_name = "Smith";
+    this.age = 20;
+    this.section = 'A';
+    this.pin_code = 102011L;
+}
+
+    void walk() {
+        System.out.println("Walking");
+        //("Without Parameter and Return type");
+    }
+
+    String talk() {
+        System.out.println("Talking");
+        //("Without Parameter, with Return type");
+        return "something";
+    }
+
+    String sleep (String f_name) {
+        System.out.println("Sleeping");
+        //("With Parameter and Return type");
+        return "something_else";
+    }
+
+    void eat(long pin_code) {
+        System.out.println("Eating");
+        //("With Parameter, without Return type");
+    }
+
+}
+
+
